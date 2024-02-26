@@ -21,16 +21,13 @@ var indice_bala_escolhida = 0
 var indice_bala_atirada = 0
 
 // Lista de Pessoas
-let pessoas = ["John Doe",
-"Mary Smith",
-"Michael Johnson",
-"Susan Davis",
-"Christopher Wilson",
-"Jessica Brown",
-"David Martinez",
-"Linda Anderson",
-"James Thompson",
-"Jennifer Garcia"]
+let pessoas = ["John Doe","Mary Smith","Michael Johnson","Susan Davis","Christopher Wilson",
+"Jessica Brown","David Martinez","Linda Anderson","James Thompson","Jennifer Garcia",
+"John Smith", "Emily Johnson", "Michael Williams", "Sarah Brown", "David Davis",
+"Jessica Miller", "Christopher Wilson", "Ashley Martinez", "Matthew Taylor", "Amanda Anderson",
+"James Thomas", "Jennifer Garcia", "Daniel Hernandez", "Elizabeth Moore", "Joshua Martin",
+"Melissa Thompson", "Robert Lewis", "Nicole Walker", "William Lee", "Stephanie Hall"
+]
 var pessoa_selecionada =''
 
 
@@ -172,6 +169,10 @@ function VerificarSeTemBalas() {
         EscolherQuantidadeDeBalas()
         EscolherBalaFalsa(balas_lista)
         MensagemSimples('Recomeçando!')
+        setTimeout(()=>{
+            MensagemAviso(`Tem ${quantidade_de_balas_sorteadas} balas no pente, e uma delas é falsa.`)
+            MensagemSimples('Começem!')
+        }, 1000)
         AtivarBotoes()
         indice_bala_atirada = 0
     }    
