@@ -181,7 +181,7 @@ function VerificarSeTemBalas() {
 function atirar(atirador, alvo) {
     DesativarBotoes()
     console.log(balas_lista[indice_bala_atirada]) //
-    if (balas_lista[indice_bala_atirada] == 'bala'){
+    if (balas_lista[0] == 'bala'){
         if (alvo == inimigo_da_vez) {
             numero_de_turnos--
             numero_de_turnos_div.textContent = `Turnos: ${numero_de_turnos}`
@@ -218,7 +218,7 @@ function atirar(atirador, alvo) {
                 }
             },2000)}
 
-    }else if (balas_lista[indice_bala_atirada] == 'bala_falsa') {
+    }else if (balas_lista[0] == 'bala_falsa') {
         if (alvo == inimigo_da_vez) {
             numero_de_turnos--
             numero_de_turnos_div.textContent = `Turnos: ${numero_de_turnos}`
