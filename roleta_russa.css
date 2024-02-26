@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --cor-um: #FF004D;
+    --cor-dois: #FAEF5D;
+    --cor-tres: #1D2B53;
+    --cor-quatro: #7E2553;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-tres);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5vh;
+    width: 100vw;
+    background-color: var(--cor-um);
+    color: white;
+    font-weight: bold;
+}
+
+#list_att {
+    list-style: none;
+    background-color: whitesmoke;
+    height: 80vh;
+    width: 90vw;
+    margin-top: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.item_list {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/* Para menagens */
+.inimigo {
+    color: var(--cor-um);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.aviso {
+    color: var(--cor-quatro);
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.boa_noticia {
+    color: green;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#container_button {
+    margin-top: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.button {
+    height: 50px;
+    width: 80px;
+    border: none;
+    /* border-radius: 5px; */
+    color: white;
+    font-weight: bold;
+}
+#atirar_em_si {
+    background-color: var(--cor-um);
+}
+#atirar_em_si:hover {
+    background-color: var(--cor-quatro);
+    color: white;
+    cursor: pointer;
+}
+#atirar_no_inimigo {
+    background-color: var(--cor-dois);
+    color: var(--cor-tres);
+}
+#atirar_no_inimigo:hover {
+    cursor: pointer;
+    background-color: var(--cor-quatro);
+    color: white;
+}
+
+/* start_screen */
+#start_screen {
+    z-index: 2;
+    position: fixed;
+    width: 85vw;
+    height: 90vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.289) 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start_screen h2 {
+    color: var(--cor-tres);
+}
+
+#start_screen ul {
+    list-style: none;
+    width: 80%;
+    color: var(--cor-tres);
+}
+#start_screen ul li {
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#start_button {
+    background-color: var(--cor-dois);
+    border: none;
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    color: var(--cor-tres);
+    font-weight: 600;
+    cursor: pointer;
+}
